@@ -123,5 +123,5 @@ def index():
 if __name__ == '__main__':
     if not os.path.exists(UPLOAD_FOLDER):
         os.makedirs(UPLOAD_FOLDER)
-    app.run() # removed debug option
+    app.run(host='0.0.0.0') # removed debug option
     
