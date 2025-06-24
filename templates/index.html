@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pneumonia Detection</title>
+    <style>
+      body {
+        font-family: Arial;
+        text-align: center;
+        padding: 40px;
+      }
+      img {
+        width: 300px;
+        margin-top: 20px;
+      }
+      .result {
+        font-size: 24px;
+        margin-top: 20px;
+        color: darkblue;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Pneumonia Detection using CNN</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" required /><br /><br />
+      <button type="submit">Upload & Predict</button>
+    </form>
+
+    {% if file_path %}
+    <h2>Uploaded Image:</h2>
+    <img src="{{ file_path }}" alt="Uploaded Image" />
+    {% endif %} {% if prediction %}
+    <div class="result"><strong>Prediction:</strong> {{ prediction }}</div>
+    {% endif %}
+  </body>
+</html>

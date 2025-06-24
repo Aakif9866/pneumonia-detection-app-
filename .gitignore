@@ -1,0 +1,25 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+env/
+envo2/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Model weights and large files
+*.h5
+*.hdf5
+
+# Uploads folder
+static/uploaded/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# kaggle.json if you’re using it
+kaggle.json
